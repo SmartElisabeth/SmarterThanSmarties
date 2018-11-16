@@ -42,22 +42,19 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 <div data-role="page" id="LandingPage">
     <div data-role="header">
-        <h1>Smart<span>Glassed<span></h1>
+        <h1>Login<span></h1>
 
     </div><!-- /header -->
 
     <div data-role="main" class="ui-content">
+     <h2 class="mc-text-center">Welcome!</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
-            Username: <input type="text" name="Login"><br>
 
-             Password: <input type="text" name="pw"><br>
+            <a href="login.html" class="ui-btn ui-btn-b ui-corner-all">Login</a>
 
-             <form>
-    <input type="button" value="Button">
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-</form>
-            <input type="submit" value="Login">
+ 
+             <a href="sign-up.html" class="ui-btn ui-btn-b ui-corner-all">Sign Up</a>
+
         </form>
     </div>
 
