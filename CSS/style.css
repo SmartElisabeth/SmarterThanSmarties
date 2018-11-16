@@ -5,13 +5,15 @@
  */
 
 body {
-    background-color: #ddd;
+    background-color: #840b2a;
+    background-image: center;
     color: #222;
     font-family: Helvetica, serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
 }
+
 
 #header h1 {
     margin: 0;

@@ -34,7 +34,7 @@ $Mysql = new Mysql();
 /* settings data if a new version is out there and the std STP ID */
 //SELECT * FROM user WHERE name="matthias" AND pw="1234";
 
-$sql = "SELECT * FROM user WHERE name=:0 AND pw=:1";
+$sql = "SELECT * FROM user WHERE username=:0 AND userpassword=:1";
 $MysqlStatement_select = $Mysql->getMysqlStatement($sql);
 $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
@@ -48,18 +48,23 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
     <div data-role="main" class="ui-content">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
-            Username: <input type="text" name="Login"><br>
+            Username: <input type="text" name="name" ><br>
 
              Password: <input type="text" name="pw"><br>
+             <a href="login.php" class="ui-btn ui-btn-b ui-corner-all">Login</a>
 
-             <form>
-    <input type="button" value="Button">
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-</form>
+
             <input type="submit" value="Login">
+
+            
+
+
         </form>
     </div>
+
+ <div class="background">
+          <img src="image/1.png" title="SmartGlassed_BG">
+</div> 
 
     <?php echo "<br /> SQL Statement: <br/>" . $MysqlStatement_select->sql; ?>
 
