@@ -1,2 +1,0 @@
-# LoginPHPExample
-Example PHP Login
