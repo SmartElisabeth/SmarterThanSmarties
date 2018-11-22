@@ -43,13 +43,14 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 
 <div data-role="page" id="LandingPage">
-    <div data-role="main" class="ui-content">
+    <div  data-role="main" class="ui-content" data-theme="a">
 
         <!--  <div class="background">
             <img src="image/4.png" title="SmartGlassed_BG" > -->
+            <div style="top: 85%; position: absolute; width: 93%;">
 
         <a href="onboarding2.php" class="ui-btn" data-ajax="false" >NEXT</a>
-
+            </div>
 
         </div>
 

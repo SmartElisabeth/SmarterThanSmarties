@@ -16,7 +16,7 @@ include("PHP/MysqlStatement.class.php");
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link href="CSS/style_onboarding3.css" rel="stylesheet">
+    <link href="CSS/style_onboarding4.css" rel="stylesheet">
 </head>
 <body>
 
@@ -44,15 +44,16 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 <div data-role="page" id="LandingPage">
     <div  data-role="main" class="ui-content" data-theme="a">
 
-
+        <!--  <div class="background">
+            <img src="image/4.png" title="SmartGlassed_BG" > -->
             <div style="top: 85%; position: absolute; width: 93%;">
 
-            <a href="onboarding4.php" class="ui-btn" data-ajax="false" >NEXT</a>
+        <a href="onboarding5.php" class="ui-btn" data-ajax="false" >NEXT</a>
             </div>
     </div>
 
 
-
+</div>
 
 </div>
 
