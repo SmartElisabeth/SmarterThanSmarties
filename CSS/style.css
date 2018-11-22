@@ -5,13 +5,25 @@
  */
 
 body {
-    background-color: #840b2a;
-    background-image: center;
-    color: #222;
-    font-family: Helvetica, serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+
+
+   
+
+}
+
+.ui-page {
+    background-image: url('/SmarterThanSmarties/image/2.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important; 
+
+}
+
+.ui-content-text{
+    border: none !important;
+    border-color: transparent !important;
+    bottom: 0;
+    background: (0,0,0,0.5) !important;
 }
 
 

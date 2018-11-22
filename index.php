@@ -16,6 +16,7 @@ include("PHP/MysqlStatement.class.php");
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -40,45 +41,42 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 ?>
 
-<div data-role="page" id="LandingPage">
-    <div data-role="header">
-        <h1>Smart<span>Glassed<span></h1>
 
-    </div><!-- /header -->
+<div data-role="page" id="LandingPage">
+
+<!-- 
+     <div style="z-index:-50 !important; postion: fixed !important;" class="background">
+          <img style="z-index:-50 !important; postion: fixed !important;" src="image/1.png" title="SmartGlassed_BG">
+
+</div>  -->
 
     <div data-role="main" class="ui-content">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
             Username: <input type="text" name="name" ><br>
 
              Password: <input type="text" name="pw"><br>
-             <a href="login.php" class="ui-btn ui-btn-b ui-corner-all">Login</a>
 
-
-            <input type="submit" value="Login">
-
-            
-
+            <input type="submit" value="NEXT">
 
         </form>
     </div>
 
- <div class="background">
-          <img src="image/1.png" title="SmartGlassed_BG">
-</div> 
-
-    <?php echo "<br /> SQL Statement: <br/>" . $MysqlStatement_select->sql; ?>
-
-    <?php echo "<br /> NUM: " . $MysqlStatement_select->num_rows; ?>
 
 
-    <?php
+ <?php 
 
-    echo "<br /> Beliebiger Inhalt: <br />";
-    while ($data = $MysqlStatement_select->fetchArray()) {
-        echo $data['content'];
-    }
-    ?>
+        if ($MysqlStatement_select->num_rows>=1)
+        {
+        echo "it worked";
+
+        header("Location: http://localhost:8888/SmarterThanSmarties/login.php");
+        
+        }
+
+?>
+
 </div>
+
 
 
 
