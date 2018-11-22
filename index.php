@@ -11,7 +11,10 @@ include("PHP/MysqlStatement.class.php");
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include jQuery Mobile stylesheets -->
+    
+
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
     <!-- Include the jQuery library -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
@@ -50,15 +53,34 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 </div>  -->
 
+
+
     <div data-role="main" class="ui-content">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
-            Username: <input type="text" name="name" ><br>
 
-             Password: <input type="text" name="pw"><br>
+         <label for="usrnm" class="ui-hidden-accessible">username:</label>
+         
+          <input type="text" name="name" id="usrnm" placeholder="username">
 
-            <input type="submit" value="NEXT">
+          <label for="pswd" class="ui-hidden-accessible">password:</label>
+          <input type="text" name="pw" id="pswd" placeholder="Password">
+      
+
+            <input type="submit" value="LOGIN" >
+            FORGOT YOUR PASSWORD?<br>
+            DONT'T HAVE AN ACCOUNT YET?
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    
+            <input type="submit" value="SIGN UP" >
+
+
 
         </form>
+
     </div>
 
 

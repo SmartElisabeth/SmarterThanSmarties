@@ -12,25 +12,41 @@ body {
 }
 
 .ui-page {
-    background-image: url('/SmarterThanSmarties/image/2.png') !important;
+
+    background-image: url('/SmarterThanSmarties/image/3.png') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-position: center !important; 
 
 }
 
-.ui-content-text{
+.ui-btn{
+    background: red;}
+
+.ui-input-text, .ui-input-search{
+    border-radius: 0em !important;
+    margin-left: 40px;
+    margin-right:40px;
+   
+    background: white !important;
+    opacity: 0.3 !important;}
+
+.ui-input-btn{
+    background-color: #42DFF4 !important;
+    border-radius: 0em !important;
     border: none !important;
-    border-color: transparent !important;
-    bottom: 0;
-    background: (0,0,0,0.5) !important;
+   
+
+    
 }
 
+    
 
-#header h1 {
-    margin: 0;
-    padding: 0;
-}
+
+
+
+
+
 
 #header h1 a {
     background-color:#ccc;
@@ -76,24 +92,3 @@ body {
     padding: 12px;
 }
 
-.buttonBlack {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 4px 10px;
-    -webkit-border-radius: 5px;
-    background-image: -webkit-gradient(linear, left top, left bottom,
-    from(#7d828c),
-    color-stop(0.5, #303749),
-    color-stop(0.5, #121a2e),
-    to(#121a2e));
-    border: solid 1px rgba(79, 79, 79, 0.75);
-}
-
-.buttonBlack:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom,
-    from(#4286f5),
-    color-stop(0.5, #4286f5),
-    color-stop(0.5, #194fdb),
-    to(#194fdb));
-}
