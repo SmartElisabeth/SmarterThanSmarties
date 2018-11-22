@@ -51,7 +51,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
             Username: <input type="text" name="name" ><br>
 
              Password: <input type="text" name="pw"><br>
-             <a href="login.php" class="ui-btn ui-btn-b ui-corner-all">Login</a>
+             <a href="onboarding1.php" class="ui-btn ui-btn-b ui-corner-all">Login</a>
 
 
             <input type="submit" value="Login">

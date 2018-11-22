@@ -11,9 +11,13 @@ include("PHP/MysqlStatement.class.php");
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include jQuery Mobile stylesheets -->
-    
+<link rel="stylesheet" href="themes/GlassTheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+
 
     <!-- Include the jQuery library -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -55,7 +59,11 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 
 
-    <div data-role="main" class="ui-content">
+    <div data-role="main" class="ui-content" data-theme="a">
+ 
+       <div style="top: 50%; position: absolute; width: 93%;">
+        
+    
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
 
          <label for="usrnm" class="ui-hidden-accessible">username:</label>
@@ -67,20 +75,24 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
       
 
             <input type="submit" value="LOGIN" >
-            FORGOT YOUR PASSWORD?<br>
-            DONT'T HAVE AN ACCOUNT YET?
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+             <div align="center">
+             <br>
+            FORGOT YOUR PASSWORD?
+            </div>
+
+            <div style="margin-top:30%; text-decoration: none !important;"; align="center"; >  
+            DONT'T HAVE AN ACCOUNT YET? 
+            <a href="#"> SIGN UP</a>
+            </div>
+
     
-            <input type="submit" value="SIGN UP" >
+    
+            
 
 
 
         </form>
-
+        </div>
     </div>
 
 
@@ -91,7 +103,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
         {
         echo "it worked";
 
-        header("Location: http://localhost:8888/SmarterThanSmarties/login.php");
+        header("Location: http://localhost:8888/SmarterThanSmarties/onboarding1.php");
         
         }
 
