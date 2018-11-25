@@ -19,7 +19,7 @@ include("PHP/MysqlStatement.class.php");
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link href="CSS/style_onboarding3.css" rel="stylesheet">
+    <link href="CSS/style_onboarding5.css" rel="stylesheet">
 </head>
 <body>
 
@@ -48,24 +48,48 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
     <div  data-role="main" class="ui-content" >
 
        <div style="top: 10%; position: absolute; width: 93%; text-align: center;">
-            <p>PICK YOUR AGE</p>
+            <p>AWESOME!<br>
+NOW WE CAN LOOK UP<br>
+YOUR GLASSES </p>
         </div>
+
+                    <div style="top: 30%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >Woman</a>
+            </div>
+
+               <div style="top: 40%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >27 years old</a>
+            </div>
+   <div style="top: 50%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >casual</a>
+            </div>
+
+                   <div style="top: 70%; position: absolute; width: 93%; text-align: center;">
+            <p>Are you ready for your new <br>
+glasses? </p>
+        </div>
+
+
+  
+
 
             <div style="top: 83%; position: absolute; width: 93%;">
 
-        <a href="onboarding4.php" class="ui-btn" data-ajax="false" >NEXT</a>
+        <a href="signup" class="ui-btn" data-ajax="false" >SIGN UP</a>
             </div>
 
-        <div style="top: 93%; position: absolute; width: 93%; text-align: center;">
-
-        <a href="onboarding4.php" data-ajax="false"  >SKIP</a>
+            <div style="top: 93%; position: absolute; width: 93%; text-align: center;">  
+            ALREADY SIGNED UP? 
+            <a href="index.php"> LOGIN</a>
             </div>
 
         </div>
 
 
     </div>
-
 
 
     <?php echo "<br /> SQL Statement: <br/>" . $MysqlStatement_select->sql; ?>

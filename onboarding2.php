@@ -11,7 +11,10 @@ include("PHP/MysqlStatement.class.php");
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include jQuery Mobile stylesheets -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="themes/Glass1.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
     <!-- Include the jQuery library -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
@@ -42,19 +45,40 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 ?>
 
 <div data-role="page" id="LandingPage">
-    <div  data-role="main" class="ui-content" data-theme="a">
+    <div  data-role="main" class="ui-content" >
+       
+       <div style="top: 10%; position: absolute; width: 93%; text-align: center;">
+            <p>SELECT A SHOP</p>
+        </div>
 
-        <!--  <div class="background">
-            <img src="image/4.png" title="SmartGlassed_BG" > -->
-            <div style="top: 85%; position: absolute; width: 93%;">
+            <div style="top: 30%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >Woman</a>
+            </div>
+
+               <div style="top: 40%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >Men</a>
+            </div>
+   <div style="top: 50%; position: absolute; width: 93%;" data-theme="b">
+
+        <a href="#.php" class="ui-btn" data-ajax="false" >Kids</a>
+            </div>
+
+            <div style="top: 83%; position: absolute; width: 93%;">
 
         <a href="onboarding3.php" class="ui-btn" data-ajax="false" >NEXT</a>
             </div>
 
+        <div style="top: 93%; position: absolute; width: 93%; text-align: center;">
 
-         </div>
+        <a href="onboarding3.php" data-ajax="false"  >SKIP</a>
+            </div>
 
-     </div>
+        </div>
+
+
+    </div>
 
     <?php echo "<br /> SQL Statement: <br/>" . $MysqlStatement_select->sql; ?>
 

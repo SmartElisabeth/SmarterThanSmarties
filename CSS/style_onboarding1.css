@@ -20,8 +20,7 @@ body {
 
 }
 
-.ui-btn{
-    background: red;}
+
 
 .ui-input-text, .ui-input-search{
     border-radius: 0em !important;
@@ -31,14 +30,14 @@ body {
     background: white !important;
     opacity: 0.3 !important;}
 
-.ui-input-btn{
-    background-color: #42DFF4 !important;
-    border-radius: 0em !important;
-    border: none !important;
-
-
-
+a.ui-input-btn{
+    background-color: none !important;
 }
+
+
+
+
+
 
 
 

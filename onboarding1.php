@@ -11,7 +11,10 @@ include("PHP/MysqlStatement.class.php");
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include jQuery Mobile stylesheets -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="themes/Glass1.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
     <!-- Include the jQuery library -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
@@ -45,11 +48,23 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 <div data-role="page" id="LandingPage">
     <div  data-role="main" class="ui-content" data-theme="a">
 
+   <div style="top: 55%; position: absolute; width: 93%; text-align: center;">
+    <p>TO MEET YOUR PREFERENCE<br>
+WE ASK YOU TO ANSWER 
+THREE SIMPLE 
+QUESTIONS.</p>
+</div>
+
         <!--  <div class="background">
             <img src="image/4.png" title="SmartGlassed_BG" > -->
-            <div style="top: 85%; position: absolute; width: 93%;">
+            <div style="top: 83%; position: absolute; width: 93%;">
 
         <a href="onboarding2.php" class="ui-btn" data-ajax="false" >NEXT</a>
+            </div>
+
+        <div style="top: 93%; position: absolute; width: 93%; text-align: center;">
+
+        <a href="onboarding2.php" data-ajax="false"  >SKIP</a>
             </div>
 
         </div>
@@ -57,7 +72,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
     </div>
 
-</div>
+
 
 
  <?php 

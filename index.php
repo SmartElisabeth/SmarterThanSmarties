@@ -11,7 +11,7 @@ include("PHP/MysqlStatement.class.php");
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include jQuery Mobile stylesheets -->
-<link rel="stylesheet" href="themes/GlassTheme.min.css" />
+<link rel="stylesheet" href="themes/Glass1.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 
@@ -81,7 +81,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
             </div>
 
             <div style="margin-top:30%; text-decoration: none !important;"; align="center"; >  
-            DONT'T HAVE AN ACCOUNT YET? 
+            DON'T HAVE AN ACCOUNT YET? 
             <a href="#"> SIGN UP</a>
             </div>
 
