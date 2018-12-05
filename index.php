@@ -32,7 +32,7 @@ include("PHP/MysqlStatement.class.php");
 
 
 
-<div data-role="page" id="LandingPage">
+<div data-role="page" id="Login" class="login">
 
 <!-- 
      <div style="z-index:-50 !important; postion: fixed !important;" class="background">
@@ -65,9 +65,9 @@ include("PHP/MysqlStatement.class.php");
             FORGOT YOUR PASSWORD?
             </div>
 
-            <div style="margin-top:30%; text-decoration: none !important;"; align="center"; >  
+            <div style="margin-top:30%"; align="center"; >  
             DON'T HAVE AN ACCOUNT YET? 
-            <a href="#"> SIGN UP</a>
+            <a  href="#"> SIGN UP</a>
             </div>
 
 

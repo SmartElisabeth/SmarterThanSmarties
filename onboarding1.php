@@ -19,7 +19,7 @@ include("PHP/MysqlStatement.class.php");
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link href="CSS/style_onboarding1.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,7 +45,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 ?>
 
 
-<div data-role="page" id="LandingPage">
+<div data-role="page" id="onboarding1" class="onboarding1">
     <div  data-role="main" class="ui-content" data-theme="a">
 
    <div style="top: 55%; position: absolute; width: 93%; text-align: center;">

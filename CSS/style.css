@@ -11,17 +11,25 @@ text-decoration: none !important;
 
 }
 
-.ui-page {
 
+
+.login{
     background-image: url('/SmarterThanSmarties/image/3.png') !important;
+
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-position: center !important; 
 
 }
 
+.onboarding1{
+    background-image: url('/SmarterThanSmarties/image/4.png') !important;
 
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important; 
 
+}
 .ui-input-text, .ui-input-search{
 text-decoration: none !important;
     background: white !important;
@@ -35,10 +43,8 @@ text-decoration: none !important;
    
     
 }
+   
 
-    
-
-a link{
-    display: none !important;
+.ui-link{
     text-decoration:none !important;
 }
