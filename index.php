@@ -29,24 +29,7 @@ include("PHP/MysqlStatement.class.php");
 
 
 
-<?php
-/**
- * DEBUG:
- * echo $MysqlStatement_delete->sql; Anzeige SQL Statement
- */
 
-/* get the mysql object */
-$Mysql = new Mysql();
-
-
-/* settings data if a new version is out there and the std STP ID */
-//SELECT * FROM user WHERE name="matthias" AND pw="1234";
-
-$sql = "SELECT * FROM user WHERE username=:0 AND userpassword=:1";
-$MysqlStatement_select = $Mysql->getMysqlStatement($sql);
-$MysqlStatement_select->execute($_POST[name], $_POST[pw]);
-
-?>
 
 
 <div data-role="page" id="LandingPage">
@@ -64,17 +47,19 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
        <div style="top: 50%; position: absolute; width: 93%;">
         
     
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
+      
 
          <label for="usrnm" class="ui-hidden-accessible">username:</label>
          
           <input type="text" name="name" id="usrnm" placeholder="username">
 
           <label for="pswd" class="ui-hidden-accessible">password:</label>
+          
           <input type="text" name="pw" id="pswd" placeholder="Password">
       
 
-            <input type="submit" value="LOGIN" >
+            <button onClick='checkIn();'> Login </button>
+
              <div align="center">
              <br>
             FORGOT YOUR PASSWORD?
@@ -85,35 +70,50 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
             <a href="#"> SIGN UP</a>
             </div>
 
-    
-    
-            
 
-
-
-        </form>
         </div>
-    </div>
+        </div>
+  
 
 
 
- <?php 
 
-        if ($MysqlStatement_select->num_rows>=1)
-        {
-        echo "it worked";
-
-        header("Location: http://localhost:8888/SmarterThanSmarties/onboarding1.php");
-        
-        }
-
-?>
 
 </div>
 
+<script>
+    function checkIn(){
 
+       var Password_Value = $('#pswd').val();
+       var name_Value = $('#usrnm').val();
+
+        $.post( "checklogin.php",{ name: name_Value, pw: Password_Value}, function(data) {
+            console.log("worked " + data);
+
+
+
+
+            if (data ==1){
+
+
+            console.log("jaa");
+            $.mobile.changePage( "onboarding1.php", { reverse: true, transition: "fade", changeHash: true,reload:true });
+       
+
+            }
+            else {
+            console.log("nein");
+
+            }
+
+
+
+        });
+    }
+</script>
 
 
 </body>
+
 </html>
 

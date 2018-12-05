@@ -20,17 +20,24 @@ body {
 
 }
 
-.ui-page-theme-a .ui-btn{
-    background-color: transparent !important;
+.ui-btn{
+    background: red;}
+
+.ui-input-text, .ui-input-search{
+    border-radius: 0em !important;
+    margin-left: 40px;
+    margin-right:40px;
+
+    background: white !important;
+    opacity: 0.3 !important;}
+
+.ui-input-btn{
+    background-color: #42DFF4 !important;
     border-radius: 0em !important;
     border: none !important;
 
+
+
 }
-
-
-
-
-
-
 
 

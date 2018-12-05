@@ -46,14 +46,14 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 <div data-role="page" id="LandingPage">
     <div  data-role="main" class="ui-content" >
-       
+
        <div style="top: 10%; position: absolute; width: 93%; text-align: center;">
             <p>SELECT A SHOP</p>
         </div>
 
-            <div style="top: 30%; position: absolute; width: 93%;" data-theme="b">
+                    <div style="top: 30%; position: absolute; width: 93%;" data-theme="b">
 
-        <a href="#.php" class="ui-btn" data-ajax="false" >Woman</a>
+        <a href="#.php" class="ui-btn" data-ajax="false" >Women</a>
             </div>
 
                <div style="top: 40%; position: absolute; width: 93%;" data-theme="b">
@@ -64,7 +64,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
         <a href="#.php" class="ui-btn" data-ajax="false" >Kids</a>
             </div>
-
+      
             <div style="top: 83%; position: absolute; width: 93%;">
 
         <a href="onboarding3.php" class="ui-btn" data-ajax="false" >NEXT</a>
@@ -79,6 +79,7 @@ $MysqlStatement_select->execute($_POST[name], $_POST[pw]);
 
 
     </div>
+
 
     <?php echo "<br /> SQL Statement: <br/>" . $MysqlStatement_select->sql; ?>
 
